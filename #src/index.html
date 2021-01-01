@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('_head.html',{
+"title":"Главная"
+})
+
+<body>
+	<div class="wrapper">
+		@@include('_header.html',{})
+		<main class="page">
+			<div class="main-slider">
+				<div class="main-slider__body">
+					<div class="main-slider__itam item-main-slider">
+						<div class="item-main-slider__content">
+							<div class="item-main-slider__container _container">
+								<div class="title">
+									<div class="title__item">Только эксклюзивные</div>
+									<div class="title__main title__main_w">Лоты под аукцион и свобоДную продажу</div>
+
+								</div>
+								<div class="item-main-slider__text">Мы собираем эксклюзивную публику и экслюзивные лоты, даем
+									удобный и
+									автоматизированный сервис по покупке и продаже, а также выставлению лотов на аукцион,
+									предоставляем личные кабинеты, а также оказываем сопутствубщие услуги с продажей редких и
+									дорогих вещей</div>
+								<a href="#" class="item-main-slider__btn btn"> <span
+										class="btn__body"><span>Присоединиться</span></span> </a>
+							</div>
+						</div>
+						<div class="item-main-slider__bg _ibg">
+							<img src="/img/bg/bg01.webp" alt="">
+						</div>
+					</div>
+				</div>
+
+			</div>
+			<section class="lots">
+				<div class=" lots__container _container">
+					<div class="lots__header block-header">
+						<div class="block-header__title title">
+							<div class="title__item">Популярные</div>
+							<h2 class="title__main title__main_w title__main_bl">лоты Под аукцион</h2>
+						</div>
+						<div class="block-header__decor block-decor">
+							<div class="block-decor__items">
+								<span></span>
+							</div>
+							<div class="block-decor__icon"><img src="img/icons/01.png" alt=""></div>
+							<div class="block-decor__items">
+								<span></span>
+							</div>
+						</div>
+					</div>
+					<div class="lots__slider slider-lots">
+						<div class="slider-lots__body">
+							<div class="slider-lots__slide">
+								<div class="lot">
+									<div class="lot__header">
+										<a href="" class="lot__image _ibg">
+											<img src="img/slide1.png" alt="">
+										</a>
+										<div class="lot__timer timer-lot">
+											<div class="timer-lot__icon">
+												<img src="img/icons/clock.svg" alt="">
+											</div>
+											<div class="timer-lot__item">3:21:45:37</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="slider-lots__control control-slider-lots">
+							<div class="control-slider-lots__arrow">
+								<span></span>
+							</div>
+							<a href="#" class="control-slider-lots__link">Все Лоты</a>
+							<div class="control-slider-lots__arrow">
+								<span></span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		@@include('_footer.html',{})
+	</div>
+	@@include('_popup.html',{})
+	@@include('_js.html',{})
+</body>
+
+</html>
