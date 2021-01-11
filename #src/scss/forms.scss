@@ -20,6 +20,7 @@
 .btn {
 	display: inline-block;
 	position: relative;
+
 	&:before,
 	&::after {
 		position: absolute;
@@ -62,7 +63,7 @@
 			min-height: 50px;
 			justify-content: center;
 			align-items: center;
-			display: inline-flex;
+			display: flex;
 			padding: 0 60px;
 			color: #fff;
 			font-size: 15px;
@@ -83,11 +84,22 @@
 			}
 		}
 	}
+	&_big {
+		.btn__body span {
+			font-size: 21px;
+			color: #000;
+			font-weight: 500;
+			letter-spacing: 0px;
+			padding: 0 10px;
+		}
+	}
+
 	@media (min-width: 992px) {
 		&:hover {
-			.btn__body span{
-				&:after{
+			.btn__body span {
+				&:after {
 					height: 100%;
+
 					opacity: 0.3;
 				}
 			}
@@ -203,9 +215,13 @@ textarea {
 .input {
 	border-radius: 0 !important;
 	width: 100%;
+	font-size: 15px;
+	color: #4f4f4f;
 	display: block;
-	padding: 0px 20px;
+	height: 100%;
+	padding: 0px 25px;
 	&._focus {
+		color: #000;
 	}
 	&._error {
 	}
